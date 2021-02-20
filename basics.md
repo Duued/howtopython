@@ -16,5 +16,3 @@ A "module" or "library" is something made by someone that you can import into yo
 A function is a group of code that you can run as many times as you want by "calling" it.
 
 To "call" a function is to run the code inside of it. If you have a function named "doThings" (don't **ever** actually name your function that, be descriptive), then you would call it like this: `doThings()`
-
-(WIP)
