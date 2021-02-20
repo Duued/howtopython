@@ -1,0 +1,29 @@
+#If and Else Statements
+
+```py
+if ctx.guild.id == id: #ints stay out of quotes, while strings go in quotes
+  return True
+else:
+  return False```
+ 
+So that is a basic statement. If the guild id == the id you provide it will return True and run
+Otherwise (else) it will return false
+
+You can do the same thing with this:
+```py
+if ctx.author.id in ctx.bot.owner_ids: #you could use the @commands.is_owner check tbh
+  do stuff
+else
+  return await ctx.reply("You must be an owner to use this command")```
+  
+The if/else statements can go on and on forever.
+
+If you want a command to behave differently depending on the circumstances, you can use elif (elseif)
+
+```py
+if ctx.guild.id == id:
+  await ctx.send("Is main guild"):
+elif ctx.guild.id == id2: #You must have a statement when using elif
+  await ctx.send("Is secondary guild")
+else:
+  await ctx.send("Is neither main or secondary guild")
